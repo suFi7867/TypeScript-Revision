@@ -25,7 +25,7 @@ const Status = ({status} : statusProps) => {
 
   return (
     <div>
-   <h3>Status = {message}</h3>
+       <h3>Status = {message}</h3>
     </div>
   )
 }
