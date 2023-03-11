@@ -17,8 +17,8 @@ const PersonList = ({data, personName} : PersonListProps) => {
   return (
     <div>
      {
-        data?.map((el)=> (
-            <h5>{el.first} , {el.last}</h5>
+        data?.map((el : element)=> (
+            <h5 key={el.first}  >{el.first} , {el.last}</h5>
         ))
      }
 

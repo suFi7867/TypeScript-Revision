@@ -2,7 +2,8 @@ import React from 'react'
 
 type FirstComponentProps = {
   name : string,
-  data : number
+  data : number,
+  isLoggedIn : boolean
 }
 
 
