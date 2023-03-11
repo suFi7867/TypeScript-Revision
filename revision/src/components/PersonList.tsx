@@ -6,7 +6,7 @@ interface element {
 }
 
 
-type PersonListProps = {
+interface PersonListProps  {
     data : Array<element>,
     // data : element[]
     personName : element
@@ -20,7 +20,7 @@ const PersonList = ({data, personName} : PersonListProps) => {
         data?.map((el)=> (
             <h5>{el.first} , {el.last}</h5>
         ))
-     }\
+     }
 
 
      <h1>{personName.first}</h1>

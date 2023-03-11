@@ -11,7 +11,7 @@ type personProps = {
 const Person = ({name, Number} : personProps) => {
   return (
     <div>
-      HJey My Name is {name.first} {name.last} === {Number}
+      Hey My Name is {name.first} {name.last} === {Number}
     </div>
   )
 }
