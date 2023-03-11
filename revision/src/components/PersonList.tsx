@@ -1,24 +1,29 @@
 import React from 'react'
 
 interface element {
-    first : String,
+    first : string,
     last : string
 }
 
 
 type PersonListProps = {
-    data : element[]
+    data : Array<element>,
+    // data : element[]
+    personName : element
 }
 
 
-const PersonList = ({data} : PersonListProps) => {
+const PersonList = ({data, personName} : PersonListProps) => {
   return (
     <div>
      {
         data?.map((el)=> (
             <h5>{el.first} , {el.last}</h5>
         ))
-     }
+     }\
+
+
+     <h1>{personName.first}</h1>
     </div>
   )
 }

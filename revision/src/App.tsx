@@ -30,7 +30,9 @@ function App() {
 
        <Person name={personName}  />
 
-       <PersonList data={personArray} />
+       <PersonList data={personArray} personName={personName}   />
+
+
     </div>
   );
 }
