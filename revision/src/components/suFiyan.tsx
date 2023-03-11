@@ -1,7 +1,8 @@
 import React from 'react'
 
 type FirstComponentProps = {
-  name : string
+  name : string,
+  data : number
 }
 
 
@@ -9,7 +10,7 @@ type FirstComponentProps = {
 const FirstComponent = (props : FirstComponentProps) => {
   return (
     <div>
-      Hi {props.name}
+      Hi {props.name}, my number is {props.data}
     </div>
   )
 }
