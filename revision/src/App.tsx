@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import Container from "./components/Container";
 import Heading from "./components/Heading";
 import Input from "./components/Input";
 import Oscar from "./components/Oscar";
@@ -52,7 +53,15 @@ function App() {
       {/* passing event  */}
       <Button handleClick={()=>alert("Button Clicked")} />
 
-      <Input value="" handleChange={(event)=>console.log(event)} />
+       {/* passing event  */}
+      <Input value="sdad" handleChange={(event)=>console.log(event)} />
+
+
+      {/* // to pass CSS as Props  */}
+      <Container myCSS={{border:"1px solid red", padding:"1rem" }} />
+
+
+
 
 
 
