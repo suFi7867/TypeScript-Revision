@@ -1,15 +1,13 @@
 import React from 'react'
+import { Name } from './types/person.type'
 
-interface element {
-    first : string,
-    last : string
-}
+
 
 
 interface PersonListProps  {
-    data : Array<element>,
-    // data : element[]
-    personName : element
+    data : Array<Name>,
+    // data : Name[]
+    personName : Name
 }
 
 
@@ -17,7 +15,7 @@ const PersonList = ({data, personName} : PersonListProps) => {
   return (
     <div>
      {
-        data?.map((el : element)=> (
+        data?.map((el : Name)=> (
             <h5 key={el.first}  >{el.first} , {el.last}</h5>
         ))
      }
